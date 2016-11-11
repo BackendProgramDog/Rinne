@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocols name="测试用协议集2" package="com.test.protocol.test2">
+	<protocol>
+		<name>测试用协议1</name>
+		<no>10101</no>
+		<desc>测试用协议描述1</desc>
+		<request>
+			<param type="String" attr="testRequestParam1" desc="测试用输入参数1" />
+			<param type="Integer" attr="testRequestParam2" desc="测试用输入参数2" />
+		</request>
+		<response>
+			<param type="String" attr="testResponseParam1" desc="测试用输出参数1" />
+			<param type="Integer" attr="testResponseParam2" desc="测试用输出参数2" />
+			<param type="Integer" attr="testResponseParam3" desc="测试用输出参数3" />
+		</response>
+	</protocol>
+	<protocol>
+		<name>测试用协议2</name>
+		<no>10102</no>
+		<desc>测试用协议描述2</desc>
+		<request>
+			<param type="String" attr="testRequestParam1" desc="测试用输入参数1" />
+			<param type="Integer" attr="testRequestParam2" desc="测试用输入参数2" />
+		</request>
+		<response>
+			<param type="String" attr="testResponseParam1" desc="测试用输出参数1" />
+			<param type="Integer" attr="testResponseParam2" desc="测试用输出参数2" />
+			<param type="Integer" attr="testResponseParam3" desc="测试用输出参数3" />
+		</response>
+	</protocol>
+</protocols>

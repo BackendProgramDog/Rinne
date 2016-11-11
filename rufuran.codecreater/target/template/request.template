@@ -1,0 +1,49 @@
+<#-- 此处更改协议所在包名 -->
+package com.catstudio.moegirlcafe.cmd.${packageName};
+
+import java.util.ArrayList;
+
+import com.catstudio.moegirlcafe.cmd.Request;
+import com.catstudio.moegirlcafe.statics.ProtocalNo;
+
+/**
+<#-- 此处为协议描述 -->
+ * 其他玩家信息-请求
+ * 
+ * @author Hiroomi -> backend@program.dog
+ * @Date ${.now?string("yyyy-MM-dd HH:mm:ss")}
+ *
+ */
+<#-- 此处根据协议号生成类名 -->
+public class X${no}Request extends Request {
+
+	<#-- 循环入参属性 -->
+	<#list request.params as param>
+	/** ${param.desc} */
+	public ${param.type} ${param.attr};
+	
+	</#list>		
+	<#-- 无参构造 -->
+	public X${no}Request() {
+	}
+
+	<#-- 全参构造 -->
+	public X${no}Request(
+	<#-- 默认携带消息唯一标识msgId -->
+	int msgId
+	<#-- 此处循环放入同属性名的参数 -->
+	<#list request.params as param>
+	,${param.type} ${param.attr}
+	</#list>
+	) {
+		<#-- 此处插入协议号 -->	
+		this.msgType = ProtocalNo.X${no};
+		<#-- 此处为消息ID的绝对赋值 -->
+		this.msgId = msgId;
+		<#-- 此处循环为参数赋值 -->
+		<#list request.params as param>
+		this.${param.attr} = ${param.attr};
+		</#list>
+	}
+
+}
