@@ -1,10 +1,10 @@
 <#-- 此处更改协议所在包名 -->
-package com.catstudio.moegirlcafe.cmd.${packageName};
+package ${packageName};
 
 import java.util.ArrayList;
 
-import com.catstudio.moegirlcafe.cmd.Request;
-import com.catstudio.moegirlcafe.statics.ProtocalNo;
+import ${packageName}.Request;
+import ${packageName}.ProtocalNo;
 
 /**
 <#-- 此处为协议描述 -->

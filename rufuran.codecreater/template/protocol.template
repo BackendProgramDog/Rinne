@@ -1,10 +1,8 @@
 <#-- 此处更改协议所在包名 -->
-package com.catstudio.moegirlcafe.cmd.${packageName};
+package ${packageName};
 
-import com.catstudio.dessertshop.protocol.utils.MoeProtocol;
-import com.catstudio.moegirlcafe.cmd.MoeProtocolResult;
-import com.catstudio.moegirlcafe.cmd.${packageName}.X${no}Request;
-import com.catstudio.moegirlcafe.cmd.${packageName}.X${no}Response;
+import ${packageName}.X${no}Request;
+import ${packageName}.X${no}Response;
 
 /** 
  * ${name} - ${desc}
